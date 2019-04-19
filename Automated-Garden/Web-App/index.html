@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-widget.css">
+    <link rel="stylesheet" href="./css/style-svg.css">
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper-main">
+        <div class="heading-wrapper">
+            <p class="title-heading">AUTO GARDEN</p>
+            <p class="title-sub-heading">Indoor Gardening made simple</p>
+        </div>
+        <div class="nav-bar">
+<!--Login-->
+<!--About Project-->
+        </div>
+        <div class="top-wrapper">
+            <div class="plant-box">
+                <div class="box">
+                    <img class="stem" src="./svg/stem.svg" alt="" >
+                    <img class="pot" src="./svg/pot.svg" alt="" >
+                    <img class="leaf-BL" src="./svg/leaf.svg" alt="" >
+                    <img class="leaf-TL" src="./svg/leaf-2.svg" alt="" >
+                    <img class="leaf-TR" src="./svg/leaf-1.svg" alt="" >
+                    <img class="leaf-BR" src="./svg/leaf-3.svg" alt="" >
+                    <img id="light-lamp"class="lamp" src="./svg/lamp.svg" alt="" >
+                    <div id="container-waterdrop">
+                        <img class="water-drop" src="./svg/waterDrop.svg" alt="" >
+                        <img class="water-drop-1" src="./svg/waterDrop.svg" alt="" >
+                        <img class="water-drop-2" src="./svg/waterDrop.svg" alt="" >
+                    </div>
+                    <div id="container-ac-cold">
+                        <img class="arrow-cool" src="./svg/arrowCool.svg" alt="" >
+                        <img class="arrow-cool-1" src="./svg/arrowCool.svg" alt="" >
+                        <img class="arrow-cool-2" src="./svg/arrowCool.svg" alt="" >
+                    </div>
+                    <div id="container-ac-hot">
+                        <img class="arrow-hot" src="./svg/arrowHot.svg" alt="" >
+                        <img class="arrow-hot-1" src="./svg/arrowHot.svg" alt="" >
+                        <img class="arrow-hot-2" src="./svg/arrowHot.svg" alt="" >
+                    </div>
+                </div>
+            </div>
+            <div class="widget-container">
+                <p class="title-container">Widgets</p>
+                <div class="widget-wrapper">
+                    <div class="widget">
+                        <p class="title">TEMPERATURE</p>
+                        <p id="temp_status" class="title-sub"> - </p>
+                    </div>
+                    <div class="widget">
+                        <p class="title">AC UNIT</p>
+                        <p id="ac_status" class="title-sub"> - </p>
+                    </div>
+                    <div class="widget">
+                        <p class="title">WATER PUMP</p>
+                        <p id="waterpump_status" class="title-sub"> - </p>
+                    </div>
+                    <div class="widget">
+                        <p class="title">WATER LEVEL</p>
+                        <p id="water_status" class="title-sub"> - </p>
+                    </div>
+                    <div class="widget">
+                        <p class="title">GROW LIGHTS</p>
+                        <p id="light_status" class="title-sub"> - </p>
+                    </div>
+                    <div class="widget">
+                        <p class="title">TIME</p>
+                        <p id="time" class="title-sub"> - </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-wrapper">
+            <div class="log-container">
+                <!--Table section-->
+                <p>Message Log <!--<span class="refresher"></span>--></p> 
+                <table id="tableID"class="table-information">
+                    <tr class="table-header">
+                        <th>Time</th>
+                        <th>Temperature</th>
+                        <th>Grow Lights</th>
+                        <th>Water Pump</th>
+                        <th>Water Level</th>
+                        <th>AC Status</th>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/script-widget.js"></script>
+    <script src="./js/jquery-3.3.1.js"></script>
+
+    <script>
+        //Initialize Script file
+    $(function () {
+        getLogs();
+        refresh();
+        setInterval(refresh, 5000);
+        setInterval(() => {
+            countdown++;
+            $(".refresher").html(5 - (countdown % 5) + ' seconds until refresh.');
+        }, 1000);
+    })
+    
+    </script>
+</body>
+
+</html>

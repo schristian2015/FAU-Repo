@@ -1,0 +1,38 @@
+
+  .widgetButton{
+    height: 50px;
+    width: 50px;
+    background-color:#0C0A3E;
+    border-radius: 2em;
+  }
+  .plus{
+    top: 45px;
+    left: 40px;
+    border:1px solid #000;
+    width:20px;
+    height:20px;
+    border-radius:100%;
+    position:relative;
+    margin:4px;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .plus:before,
+  .plus:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:green;
+  }
+  .plus:before{
+      width: 2px;
+      margin: 2px auto;
+  }
+  .plus:after{
+      margin: auto 2px;
+      height: 2px;
+  }
+  

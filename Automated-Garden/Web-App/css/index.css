@@ -1,0 +1,245 @@
+body {
+	color: black;
+	background-color: darkblue;
+}
+
+div.bg {
+	background: url('https://www.storyofcooks.com/wp-content/uploads/2014/04/8822407-plant-wood-background.jpg');
+	/* here is just div sizing and positioning */
+	height: 100%;
+	width: 100%;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	overflow: hidden;
+
+}
+
+div.bg2 {
+	background: url('https://www.storyofcooks.com/wp-content/uploads/2014/04/8822407-plant-wood-background.jpg');
+	/* here is just div sizing and positioning */
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.heading_text {
+	padding-top: 25%;
+	font-size: 50px;
+	color: white;
+	text-shadow: 2px 2px 5px gray;
+}
+
+.sub_head_text {
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+
+.widget-container {
+
+	height: 280px;
+}
+
+.table-container {
+	margin-top: 10px;
+	color: black;
+	max-width: 100%;
+	height: 230px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.toolbar {
+	margin-bottom: 10px;
+	background-color: orange;
+	height: auto;
+}
+/*
+.widget {
+	background-color: lightblue;
+	height: 200px;
+	width: 250px;
+	border-radius: 10px;
+
+}
+*/
+
+.widgetred {
+	
+} 
+
+.widgetgreen {
+	
+}
+
+.widgetblue {
+	
+}
+
+
+.tempTitleEdit {
+	position: relative;
+	bottom: 40px;
+}
+
+.graybar {
+	background-color: gray;
+	width: 100%;
+	height: 2px;
+}
+
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+	background-color: #ccc;
+}
+
+.panel {
+	display: none;
+	background-color: white;
+	overflow: hidden;
+}
+
+
+.intro-section {
+	text-align: center;
+	padding-top: 100px;
+	height: 100%;
+}
+
+
+.widget-section {
+	height: auto;
+	padding-top: 50px;
+	padding-bottom: 75px;
+	text-align: center;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#527f00+0,a1d54f+13,80c217+75,527f00+98 */
+	background: #527f00;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #527f00 0%, #a1d54f 13%, #80c217 75%, #527f00 98%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #527f00 0%, #a1d54f 13%, #80c217 75%, #527f00 98%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #527f00 0%, #a1d54f 13%, #80c217 75%, #527f00 98%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#527f00', endColorstr='#527f00', GradientType=0);
+	/* IE6-9 */
+}
+
+.data-section {
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	text-align: center;
+
+	background: -moz-linear-gradient(top, rgba(244, 128, 39, 1) 0%, rgba(244, 128, 39, 0.97) 3%, rgba(247, 195, 49, 0.01) 99%, rgba(247, 195, 49, 0) 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(244, 128, 39, 1) 0%, rgba(244, 128, 39, 0.97) 3%, rgba(247, 195, 49, 0.01) 99%, rgba(247, 195, 49, 0) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(244, 128, 39, 1) 0%, rgba(244, 128, 39, 0.97) 3%, rgba(247, 195, 49, 0.01) 99%, rgba(247, 195, 49, 0) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48027', endColorstr='#00f7c331', GradientType=0);
+	/* IE6-9 */
+}
+
+.about-section {
+	color: aliceblue;
+
+	height: 90%;
+	padding-top: 20px;
+	text-align: center;
+
+	background: -moz-linear-gradient(top, rgba(247, 195, 49, 1) 0%, rgba(247, 195, 49, 0.99) 1%, rgba(247, 136, 47, 0) 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(247, 195, 49, 1) 0%, rgba(247, 195, 49, 0.99) 1%, rgba(247, 136, 47, 0) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(247, 195, 49, 1) 0%, rgba(247, 195, 49, 0.99) 1%, rgba(247, 136, 47, 0) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7c331', endColorstr='#00f7882f', GradientType=0);
+	/* IE6-9 */
+}
+
+.box_shadow {
+	background-color: #d3d3d375;
+	-moz-box-shadow: 0 0 10px 10px black;
+	-webkit-box-shadow: 0 0 10px 10px black;
+	box-shadow: 0 0 3px 3px black;
+	height: 700px;
+	width: 500px;
+	padding: 20px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-right: 15px;
+	margin-left: 15px;
+	overflow-y: auto;
+}
+
+.box_shadow_widget {
+	background-color: #d3d3d375;
+	-moz-box-shadow: 0 0 10px 10px black;
+	-webkit-box-shadow: 0 0 10px 10px black;
+	box-shadow: 0 0 3px 3px black;
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/*
+.time_head_box {
+	height: 60px;
+	width: auto;
+	background-color: gray;
+}*/
+
+.ce_Icon {
+	position: absolute;
+	top: 12px;
+	left: 160px;
+	border-radius: 50px;
+	height: 60px;
+	width: 60px;
+	background-color: aqua;
+	color: white;
+}
+
+.ce_Icon_text {
+	position: absolute;
+	font-size: 30px;
+	bottom: 4px;
+	left: 5px;
+	text-shadow: 2px 2px #e066ff;
+}

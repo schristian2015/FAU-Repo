@@ -1,0 +1,233 @@
+
+.wrapper-svg{
+    position: relative;
+    border: 1px darkslategray;
+    width: 100%;
+    height: 400px;
+}
+.plant-box{
+    width: 33%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
+    transform: scale(.80);
+}
+.box{ 
+    position: relative;
+    width: 100%;        
+    height: inherit;
+    top: 100px;
+    left: 0;
+}
+/*-------------Plant Body-------------*/
+
+.pot{
+    position: relative;
+    top: 10em;  
+    left: 2em;
+}
+.stem{
+    position: absolute;
+    left: 7em;
+}
+/*-------------Lamp-------------*/
+
+.lamp{
+    position: absolute;
+    top: -11.6em;
+    left: 1.8em;
+}
+/*-------------Leafs-------------*/
+
+.leaf-TL{
+    position: absolute;
+    top: -3.8em;
+    left: 3.5em;
+    animation: animateTL 3s infinite;
+
+}
+.leaf-TR{
+    position: absolute;
+    top: .7em;
+    left: 9em;
+    animation: animateTR 2s infinite;
+}
+.leaf-BR{
+    position: absolute;
+    top: 4.2em;
+    left: 9em;
+    animation: animateBR 2.5s infinite;
+}
+.leaf-BL{
+    position: absolute;
+    top: 1.7em;
+    left: 0.5em;
+    animation: animateBL 2s infinite;
+}
+/*-------------water drops-------------*/
+
+.water-drop{
+    position: absolute;
+    top: -70px;
+    left: 0;
+    animation: waterDrop 3s infinite;
+}
+.water-drop-1{
+    position: absolute;
+    top: -45px;
+    left: 20px;
+    animation: waterDrop2 2.4s infinite;
+}
+.water-drop-2{
+    position: absolute;
+    top: -70px;
+    left: 40px;
+    animation: waterDrop3 3s infinite;
+}
+/*-------------COOL Arrows-------------*/
+
+.arrow-cool{
+    position: absolute;
+    top: -80px;
+    left: 30px;
+    animation: arrowMove 3s infinite;
+}
+.arrow-cool-1{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    animation: arrowMove 4s infinite;
+}
+
+.arrow-cool-2{
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    animation: arrowMove 2s infinite;
+}
+/*-------------HOT Arrows-------------*/
+.arrow-hot{
+    position: absolute;
+    top: -80px;
+    left: 30px;
+    animation: arrowMove 3s infinite;
+}
+.arrow-hot-1{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    animation: arrowMove 4s infinite;
+}
+
+.arrow-hot-2{
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    animation: arrowMove 2s infinite;
+}
+
+/*------------- Default setting animation none-------------*/
+
+#wrapper-waterdrop{
+    display: none;
+}
+#light-lamp{
+    display: none;
+}
+#container-ac-hot{
+    display: none;
+}
+#container-ac-cold{
+    display: none;
+}
+
+/*--------------Animations--------------*/
+@keyframes arrowMove{
+    0%{
+        filter: opacity(0);
+    }
+    50%{
+        left: 150px;
+        filter: opacity(10);
+    }
+    100%{
+        left: 350px;
+        filter: opacity(0);
+    }
+}
+
+@keyframes waterDrop{
+    0%{
+        filter: opacity(0);
+    }
+    50%{
+        top: -30px;
+        filter: opacity(10);
+    }
+    100%{
+        top: -10px;
+        filter: opacity(0);
+    }
+}
+@keyframes waterDrop2{
+    0%{
+        filter: opacity(0);
+    }
+    50%{
+        top: -10px;
+        filter: opacity(10);
+    }
+    100%{
+        top: 0px;
+        filter: opacity(0);
+    }
+}
+@keyframes waterDrop3{
+    0%{
+        filter: opacity(0);
+    }
+    50%{
+        top: -40px;
+        filter: opacity(10);
+    }
+    100%{
+        top: -20px;
+        filter: opacity(0);
+    }
+}
+@keyframes animateBL{
+    0%{}
+    50%{
+        transform:rotate(10deg);
+        top: 1.3em;
+        left: 0.5em;
+    }
+    100%{}
+}
+@keyframes animateTL{
+    0%{}
+    50%{
+        transform:rotate(10deg);
+        top: -4.2em;
+        left: 3.5em;
+    }
+    100%{}
+}
+@keyframes animateBR{
+    0%{}
+    50%{
+        transform:rotate(10deg);
+        top: 4.5em;
+        left: 9em;
+    }
+    100%{}
+}
+@keyframes animateTR{
+    0%{}
+    50%{
+        transform:rotate(10deg);        
+        top: 1.2em;
+        left: 9em;
+    }
+    100%{}
+}
